@@ -9,7 +9,14 @@
     <link rel="stylesheet" href="CSS/style.css" />
     <link rel="stylesheet" href="CSS/ResetNavbarBootstrap.css" />
 
-    <!-- Bootstap -->
+    <!-- Bootstap CSS - CDN-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+
     <!-- Bootstrap Icons - CDN -->
     <link
       rel="stylesheet"
@@ -18,48 +25,163 @@
   </head>
   <body>
     <!-- Navbar Start -->
-    <div class="navbar1">
+    <div class="navbar1 fixed-top">
       <div class="logo">
         <img
-          src="IMG/Logo/CosPLayStore.png"
+          src="IMG/Logo/CosPlayStore.png"
           alt="Logo CosPlay Store"
           class="logo-cosplaystore"
         />
         CosPlay Store
       </div>
       <input type="checkbox" id="click" />
-      <ul class="navbar-nav1">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-      <ul class="navbar-extra">
-        <li>
-          <a href="#"><i class="bi bi-search"></i></a>
-        </li>
-        <li>
-          <a href="#"><i class="bi bi-cart3"></i></a>
-        </li>
-        <li>
-          <a href="#"><i class="bi bi-person"></i></a>
-        </li>
+      <div class="navbar-nav1">
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Products</a>
+        <a href="#">Gallery</a>
+        <a href="#">Contact</a>
+      </div>
+      <div class="navbar-extra">
+        <a href="#"><i class="bi bi-search"></i></a>
+        <a href="#"><i class="bi bi-cart3"></i></a>
+        <a href="#"><i class="bi bi-person"></i></a>
         <div class="hamburger">
           <label for="click" class="menu-btn">
             <i class="bi bi-list"></i>
           </label>
         </div>
-      </ul>
+      </div>
     </div>
     <!-- Navbar End -->
 
+    <!-- Spacing -->
+    <div class="spacing"></div>
+
     <!-- HomePage Start -->
-    <section>
-      <div class="gambaraja"></div>
+    <section id="landingpage">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <h2>CosPlay</h2>
+            <h4>Store</h4>
+            <p>
+              CosPlay Store is a place where you can find a variety of cosplay
+              costumes from games, anime, and more. We offer affordable prices
+              without compromising on quality.
+            </p>
+            <button class="read-btn">
+              See More <i class="bi bi-arrow-right-short"></i>
+            </button>
+          </div>
+          <div class="col-md-6">
+            <img
+              src="IMG/landingpage.jpg"
+              alt="@Fera_Jelita"
+              class="image-landingpage"
+            />
+            <div class="color-box"></div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- HomePage End -->
 
+    <!-- Spacing -->
+    <div style="margin-top: 10rem"></div>
+
+    <!-- Products Start-->
+    <section id="products">
+      <div class="container">
+        <h2 class="text-center fw-bolder mb-4">Products</h2>
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img src="IMG/Products/1.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="title-card">Uruha Rushia</h5>
+                <p class="price-card">Rp 800.000</p>
+                <a href="#" class="btn btn-danger"
+                  >Buy <i class="bi bi-cart-plus"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img src="IMG/Products/2.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="title-card">Raiden Shougun</h5>
+                <p class="price-card">Rp 1.000.000</p>
+                <a href="#" class="btn btn-danger"
+                  >Buy <i class="bi bi-cart-plus"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img src="IMG/Products/3.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="title-card">Anak SMP</h5>
+                <p class="price-card">Rp 200.000</p>
+                <a href="#" class="btn btn-danger"
+                  >Buy <i class="bi bi-cart-plus"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img src="IMG/Products/4.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="title-card">Megumin</h5>
+                <p class="price-card">Rp 500.000</p>
+                <a href="#" class="btn btn-danger"
+                  >Buy <i class="bi bi-cart-plus"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img src="IMG/Products/5.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="title-card">Kinako</h5>
+                <p class="price-card">Rp 250.000</p>
+                <a href="#" class="btn btn-danger"
+                  >Buy <i class="bi bi-cart-plus"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img src="IMG/Products/6.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="title-card">Uruha Rushia</h5>
+                <p class="price-card">Rp 600.000</p>
+                <a href="#" class="btn btn-danger"
+                  >Buy <i class="bi bi-cart-plus"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Products End-->
+
+    <!-- Footer -->
+    <footer
+      style="background-color: #f78972; padding-bottom: 1px; padding-top: 20px"
+    >
+      <p style="font-size: 20px; font-weight: 600" class="text-center">
+        Andreas XII TKJ 1 - Fiony <span style="color: red;"><i class="bi bi-heart-fill"></i></span></i>
+      </p>
+    </footer>
+
+    <!-- Bootstrap JS - CDN -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
