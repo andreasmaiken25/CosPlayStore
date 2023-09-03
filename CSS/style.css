@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
 /* Index CSS */
 * {
   margin: 0;
@@ -8,7 +10,7 @@
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 /* Navbar Start */
@@ -159,58 +161,59 @@ body {
 #landingpage {
   width: 100%;
   height: 100vh;
+  background-image: url("/IMG/landingpage/background.png");
+  background-position: center;
+  background-size: cover;
+  padding-left: 5%;
+  padding-left: 5%;
+  box-sizing: border-box;
+  position: relative;
   display: flex;
+  align-items: center;
   justify-content: center;
-  align-items: center;
 }
 
-#landingpage h2 {
-  font-size: 60px;
-  font-weight: 500;
+.info {
+  text-decoration: none;
+  color: black;
 }
 
-#landingpage h4 {
-  margin-top: -10px;
-  font-size: 40px;
-  font-weight: 500;
+.content h1 {
+  font-weight: 700;
+  font-size: 65px;
+  letter-spacing: 2px;
 }
-#landingpage .read-btn {
-  border: none;
-  outline: none;
-  background: linear-gradient(to right, #f78972, #f78972);
-  color: white;
-  font-size: 1em;
-  font-weight: 500;
-  padding: 5px 20px;
+
+.arrow-icons {
+  margin-top: 40px;
+  margin-right: 40px;
   display: flex;
-  align-items: center;
-  margin-top: 35px;
-  border-radius: 10px;
   cursor: pointer;
-  transform: translateX(50px);
-  opacity: 0;
 }
 
-#landingpage .read-btn {
-  transform: translateX(0);
-  opacity: 1;
-  transition: 1s ease;
-  transition-delay: 0.3s;
-  transition-property: transform, opacity;
+.arrow-icons img {
+  margin-right: 25px;
+  width: 40px;
+  display: flex;
 }
 
-#landingpage .read-btn i {
-  font-size: 1.6em;
-  transition: 0.3s ease;
+.feature-img {
+  height: 90%;
+  position: absolute;
+  bottom: 0;
+  right: 160px;
+  z-index: 1;
 }
 
-#landingpage .read-btn:hover i {
-  transform: translateX(5px);
-}
-
-#landingpage .image-landingpage {
-  width: 80%;
-  border-radius: 0px 0px 0px 100px;
+@media (max-width: 786px) {
+  .feature-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30%;
+    bottom: 0;
+    right: 70px;
+  }
 }
 
 /* Produvts */
