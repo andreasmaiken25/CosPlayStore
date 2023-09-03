@@ -161,7 +161,7 @@ body {
 #landingpage {
   width: 100%;
   height: 100vh;
-  background-image: url("//IMG/landingpage/background.png");
+  background-image: url("../IMG/landingpage/background.png");
   background-position: center;
   background-size: cover;
   padding-left: 5%;
