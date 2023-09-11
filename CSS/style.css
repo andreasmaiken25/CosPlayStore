@@ -14,15 +14,20 @@ body {
 }
 
 /* Navbar Start */
+
 .navbar1 {
   height: 80px;
-  background: rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(8px);
   display: flex;
   justify-content: space-between;
   padding: 20px 5%;
   align-items: center;
+}
+
+.navbar1.sticky {
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(8px);
   border-bottom: 2px solid black;
+  transition: ease-in;
 }
 
 .navbar1 .navbar-nav1 {
@@ -213,6 +218,52 @@ body {
     height: 30%;
     bottom: 0;
     right: 70px;
+  }
+}
+
+/* About Us */
+#aboutus {
+  background-image: url(../IMG/aboutus/1.jpg);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 55%;
+  background-color: white;
+  overflow: hidden;
+  padding: 100px;
+}
+
+.innner-container {
+  width: 55%;
+  float: right;
+  background-color: rgb(255, 255, 255, 0.9);
+  padding: 150px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  .innner-container {
+    padding: 80px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #aboutus {
+    background-size: 100%;
+    padding: 100px 40px;
+    background-position: top;
+  }
+  .innner-container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #aboutus {
+    padding: 0px;
+  }
+  .innner-container {
+    background-color: rgb(255, 255, 255, 0.8);
+    padding: 60px;
   }
 }
 
