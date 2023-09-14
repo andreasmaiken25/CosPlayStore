@@ -267,14 +267,51 @@ body {
   }
 }
 
-/* Produvts */
-.card-body .title-card {
+/* Produvts Dekstop*/
+.title-products {
   font-size: 25px;
-  font-weight: 700;
 }
 
-.card-body .price-card {
-  margin-top: -5px;
-  font-weight: 600;
-  font-size: 20px;
+.category-product {
+  font-size: 15px;
+  margin-top: -3px;
+}
+
+.flex-card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price {
+  font-weight: 500;
+}
+
+.button-buy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #7fb2f0;
+  padding: 5px 5px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.button-buy a {
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.button-add {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #9ff07f;
+  padding: 5px 5px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.button-add a {
+  font-weight: 500;
+  font-size: 13px;
 }
